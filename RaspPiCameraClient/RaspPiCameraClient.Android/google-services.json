@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "xxxxxxxxxxx",
+    "firebase_url": "https://rasppicameraclient.firebaseio.com",
+    "project_id": "rasppicameraclient",
+    "storage_bucket": "rasppicameraclient.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:xxxxxxxxxxxxxx:android:xxxxxxxxxxxxx",
+        "android_client_info": {
+          "package_name": "com.kurigohan.RaspPiCameraClient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "xxxxxxxxxx-xxxxxxxxxxxxxxxx.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "xxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

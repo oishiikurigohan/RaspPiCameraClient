@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RaspPiCameraClient"
+             x:Class="RaspPiCameraClient.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:MessageSubscriber />
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+
+        <ListView Grid.Row="0" ItemsSource="{Binding BlobListSource.Value}" SelectedItem="{Binding SelectedItem.Value, Mode=TwoWay}" >
+            <ListView.Behaviors>
+                <local:ListViewSelectedItemBehavior Command="{Binding ItemTappedCommand}" />
+            </ListView.Behaviors>
+        </ListView>
+        <Image Grid.Row="1" Source="{Binding BlobImageSource.Value}" />
+    </Grid>
+
+</ContentPage>
